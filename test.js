@@ -1,5 +1,5 @@
 let majesty = require('majesty')
-
+const puddim = require('./origin/app')
 function exec (describe, it, beforeEach, afterEach, expect, should, assert) {
   afterEach(function () {
     // Função a ser executada antes de cada teste
@@ -11,9 +11,7 @@ function exec (describe, it, beforeEach, afterEach, expect, should, assert) {
 
   describe('Caso de teste 1', function () {
     describe('Caso de teste 1.1', function () {
-      it('Executando algum teste', function () {
-        expect(true).to.equal(true)
-      })
+      console.log(puddim.int)
     })
   })
 }
